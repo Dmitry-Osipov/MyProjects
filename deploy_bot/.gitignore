@@ -3,4 +3,4 @@
 .vscode/
 venv/
 __pycache__/
-secrets.py
+pythonProject/My/Project/secrets.py
