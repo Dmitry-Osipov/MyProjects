@@ -15,7 +15,7 @@ BOT_TOKEN: str = config.tg_bot.token
 storage: MemoryStorage = MemoryStorage()
 
 # Создаем объекты бота и диспетчера
-bot: Bot = Bot(BOT_TOKEN)
+bot: Bot = Bot(token=BOT_TOKEN)
 dp: Dispatcher = Dispatcher(storage=storage)
 
 # Создаем "базу данных" пользователей
