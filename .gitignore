@@ -1,4 +1,4 @@
-pythonProject/MyProject/secrets
+pythonProject/MyProject/secrets.py
 .env
 .mypy_cache/
 .vscode/
