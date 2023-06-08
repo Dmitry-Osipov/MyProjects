@@ -1,6 +1,11 @@
+secrets.py
 .env
 .mypy_cache/
 .vscode/
 venv/
 __pycache__/
-pythonProject/My/Project/secrets.py
+something_else/
+pygame_async_demo/
+test/
+temp/
+my_test.py
