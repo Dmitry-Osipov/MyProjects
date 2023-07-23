@@ -35,7 +35,7 @@ for first_number in range(0, 1000):
 
 stop_number = int(input('Input value to stop: '))
 count = 0
-for i in range(stop_number * (-1), stop_number + 1):
+for i in range(stop_number + 1):
     count += 1
     if 2 ** i <= stop_number:
         print(f'{count}) 2 ** {i} = {2 ** i}')
