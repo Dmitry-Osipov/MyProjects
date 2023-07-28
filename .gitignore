@@ -1,0 +1,12 @@
+MyProjects/secrets.py
+.env
+.mypy_cache/
+.vscode/
+venv/
+__pycache__/
+something_else/
+pygame_async_demo/
+test/
+temp/
+my_test.py
+.idea/
