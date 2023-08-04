@@ -2,4 +2,4 @@
 
 Папка Small_Projects содержит мои маленькие проекты.
 
-Папка Python_Homework содержит мои знания по Python.
+Папка Python_Knowleges содержит мои знания по Python.
