@@ -53,7 +53,7 @@ def text(message):
         else:
             wd = 'Посмотри в окно, я не понимаю, что там за погода...'
 
-        bot.send_message(chat_id, f'{datetime.datetime.now().strftime("%Y-%user_distance-%d %H:%M")}\n'
+        bot.send_message(chat_id, f'{datetime.datetime.now().strftime("%Y-%m-%d %H:%M")}\n'
                             f'Погода в городе: {city}\nТемпература: {cur_temp}°C {wd}\n'
                             f'Влажность: {humidity}%\nДавление: {math.ceil(pressure/1.333)} мм.рт.ст.\nВетер: {wind} м/с\n'
                             f'Восход: {sunrise_timestamp}\nЗакат: {sunset_timestamp}\nПродолжительность дня: {length_of_day}\n'
@@ -87,7 +87,7 @@ def text(message):
         else:
             wd = 'Посмотри в окно, я не понимаю, что там за погода...'
 
-        bot.send_message(chat_id, f'{datetime.datetime.now().strftime("%Y-%user_distance-%d %H:%M")}\n'
+        bot.send_message(chat_id, f'{datetime.datetime.now().strftime("%Y-%m-%d %H:%M")}\n'
                             f'Погода в городе: {city}\nТемпература: {cur_temp}°C {wd}\n'
                             f'Влажность: {humidity}%\nДавление: {math.ceil(pressure / 1.333)} мм.рт.ст.\nВетер: {wind} м/с\n'
                             f'Восход: {sunrise_timestamp}\nЗакат: {sunset_timestamp}\nПродолжительность дня: {length_of_day}\n'
@@ -121,7 +121,7 @@ def text(message):
         else:
             wd = 'Посмотри в окно, я не понимаю, что там за погода...'
 
-        bot.send_message(chat_id, f'{datetime.datetime.now().strftime("%Y-%user_distance-%d %H:%M")}\n'
+        bot.send_message(chat_id, f'{datetime.datetime.now().strftime("%Y-%m-%d %H:%M")}\n'
                             f'Погода в городе: {city}\nТемпература: {cur_temp}°C {wd}\n'
                             f'Влажность: {humidity}%\nДавление: {math.ceil(pressure/1.333)} мм.рт.ст.\nВетер: {wind} м/с\n'
                             f'Восход: {sunrise_timestamp}\nЗакат: {sunset_timestamp}\nПродолжительность дня: {length_of_day}\n'
@@ -155,7 +155,7 @@ def text(message):
         else:
             wd = 'Посмотри в окно, я не понимаю, что там за погода...'
 
-        bot.send_message(chat_id, f'{datetime.datetime.now().strftime("%Y-%user_distance-%d %H:%M")}\n'
+        bot.send_message(chat_id, f'{datetime.datetime.now().strftime("%Y-%m-%d %H:%M")}\n'
                             f'Погода в городе: {city}\nТемпература: {cur_temp}°C {wd}\n'
                             f'Влажность: {humidity}%\nДавление: {math.ceil(pressure / 1.333)} мм.рт.ст.\nВетер: {wind} м/с\n'
                             f'Восход: {sunrise_timestamp}\nЗакат: {sunset_timestamp}\nПродолжительность дня: {length_of_day}\n'
@@ -189,7 +189,7 @@ def text(message):
         else:
             wd = 'Посмотри в окно, я не понимаю, что там за погода...'
 
-        bot.send_message(chat_id, f'{datetime.datetime.now().strftime("%Y-%user_distance-%d %H:%M")}\n'
+        bot.send_message(chat_id, f'{datetime.datetime.now().strftime("%Y-%m-%d %H:%M")}\n'
                             f'Погода в городе: {city}\nТемпература: {cur_temp}°C {wd}\n'
                             f'Влажность: {humidity}%\nДавление: {math.ceil(pressure / 1.333)} мм.рт.ст.\nВетер: {wind} м/с\n'
                             f'Восход: {sunrise_timestamp}\nЗакат: {sunset_timestamp}\nПродолжительность дня: {length_of_day}\n'
@@ -223,7 +223,7 @@ def text(message):
         else:
             wd = 'Посмотри в окно, я не понимаю, что там за погода...'
 
-        bot.send_message(chat_id, f'{datetime.datetime.now().strftime("%Y-%user_distance-%d %H:%M")}\n'
+        bot.send_message(chat_id, f'{datetime.datetime.now().strftime("%Y-%m-%d %H:%M")}\n'
                             f'Погода в городе: {city}\nТемпература: {cur_temp}°C {wd}\n'
                             f'Влажность: {humidity}%\nДавление: {math.ceil(pressure / 1.333)} мм.рт.ст.\nВетер: {wind} м/с\n'
                             f'Восход: {sunrise_timestamp}\nЗакат: {sunset_timestamp}\nПродолжительность дня: {length_of_day}\n'

@@ -12,7 +12,7 @@ def start(message):
     first_name = message.chat.first_name
     photo = open(r'C:\Users\dimao\OneDrive\Изображения\Обучение\Prikolnye_kartinki_s_nadpisyami_Privet_6_06131518.jpg', 'rb')
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    keyboard = types.KeyboardButton(text='Random user_number')
+    keyboard = types.KeyboardButton(text='Random number')
     keyboard_2 = types.KeyboardButton(text='Password all elements')
     keyboard_3 = types.KeyboardButton(text='Password letters only')
     keyboard_4 = types.KeyboardButton(text='Password digits and signs only')
@@ -30,8 +30,8 @@ def start(message):
 def text(message):
     chat_id = message.chat.id
     if message.chat.type == 'private':
-        if message.text == 'Random user_number':
-            bot.send_message(chat_id, f'Random user_number: {random.randint(1, 1000)}')
+        if message.text == 'Random number':
+            bot.send_message(chat_id, f'Random number: {random.randint(1, 1000)}')
         elif message.text == 'Password all elements':
             password = ''
             alphabet = 'abcdefghijklmnopqrstuvwxyz'
