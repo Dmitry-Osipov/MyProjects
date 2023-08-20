@@ -1,5 +1,6 @@
 from random import randint
 from collections import deque
+from pprint import pprint
 
 
 # ТЕОРИЯ:
@@ -87,8 +88,11 @@ def find_way(two_dimensional_array, start, end):
 # start_point = (1, 0)
 # end_point = (3, 10)
 
-test_array = create_2d_array(4, 11, 0, 1)
-print(test_array[0], test_array[1], test_array[2], test_array[3], sep='\n')  # Для проверки случайного массива
+rows = int(input('Enter the number of rows: '))
+columns = int(input('Enter the number of columns: '))
+test_array = create_2d_array(rows, columns, 0, 1)
+pprint(test_array)  # Для проверки случайного массива
+
 start_x, start_y = map(int, input('Enter the row number and column number of the start point, separated by a space: ')
                        .split())
 end_x, end_y = map(int, input('Enter the row number and column number of the end point, separated by a space: ')
