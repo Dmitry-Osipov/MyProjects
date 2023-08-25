@@ -20,11 +20,11 @@ haystack and needle consist of only lowercase English characters.
 
 
 def strStr(haystack: str, needle: str) -> int:
-    # возвращаем -1, если haystack меньше needle
+    # Возвращаем -1, если haystack меньше needle.
     if len(haystack) < len(needle):
         return -1
 
-    # возвращаем 0, если длины haystack и needle равны 1, а также если первые элементы равны
+    # Возвращаем 0, если длины haystack и needle равны 1, а также если первые элементы равны.
     if len(haystack) == len(needle) == 1 and haystack[0] == needle[0]:
         return 0
 
@@ -34,14 +34,14 @@ def strStr(haystack: str, needle: str) -> int:
 
         while haystack[i] == needle[j]:
 
-            # возвращаем start индекс, если конец needle совпал, так как конец тоже совпал
+            # Возвращаем start индекс, если конец needle совпал, так как конец тоже совпал.
             if j == len(needle) - 1:
                 return start
 
             i += 1
             j += 1
 
-            # возвращаем -1, если достигнули конца haystack и подстрока не совпала
+            # Возвращаем -1, если достигнули конца haystack и подстрока не совпала.
             if i == len(haystack):
                 return -1
 
