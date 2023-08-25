@@ -126,7 +126,7 @@ class Clock:
         # это также говорит о том, что не требуется преобразовывать возвращаемое значение в int.
 
     def __itruediv__(self, other):
-        print('__itruediv__')  # Проверяем отработку данного магического метода
+        print('__itruediv__')  # Проверяем отработку данного магического метода.
         if not isinstance(other, (int, Clock)):
             raise ArithmeticError('Правый операнд должен быть целым числом или экземпляром класса Clock')
 
@@ -158,7 +158,7 @@ class Clock:
         return self // other
 
     def __ifloordiv__(self, other):
-        print('__ifloordiv__')  # Проверяем отработку данного магического метода
+        print('__ifloordiv__')  # Проверяем отработку данного магического метода.
         if not isinstance(other, (int, Clock)):
             raise ArithmeticError('Правый операнд должен быть целым числом или экземпляром класса Clock')
 
@@ -189,7 +189,7 @@ class Clock:
         return self % other
 
     def __imod__(self, other):
-        print('__imod__')  # Проверяем отработку данного магического метода
+        print('__imod__')  # Проверяем отработку данного магического метода.
         if not isinstance(other, (int, Clock)):
             raise ArithmeticError('Правый операнд должен быть целым числом или экземпляром класса Clock')
 
