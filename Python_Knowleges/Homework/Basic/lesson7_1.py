@@ -1,3 +1,6 @@
+from typing import Callable
+
+
 # Задача 34: Винни-Пух попросил Вас посмотреть, есть ли в его стихах ритм. Поскольку разобраться в его кричалках не
 # настолько просто, насколько легко он их придумывает, Вам стоит написать программу. Винни-Пух считает, что ритм есть,
 # если число слогов (т.е. число гласных букв) в каждой фразе стихотворения одинаковое. Фраза может состоять из одного
@@ -37,6 +40,7 @@ def find_rhythm(chant: str) -> str:
 Winnie_words = 'пара-ра-рам рам-пам-папам па-ра-па-да'
 print(find_rhythm(Winnie_words))
 
+
 # Задача 36: Напишите функцию print_operation_table(operation, num_rows=6, num_columns=6), которая принимает в качестве
 # аргумента функцию, вычисляющую элемент по номеру строки и столбца. Аргументы num_rows и num_columns указывают число
 # строк и столбцов таблицы, которые должны быть распечатаны. Нумерация строк и столбцов идет с единицы (подумайте,
@@ -53,7 +57,14 @@ print(find_rhythm(Winnie_words))
 # 6 12 18 24 30 36
 
 
-def print_operation_table(operation, num_rows=6, num_columns=6):
+def print_operation_table(operation: Callable, num_rows: int = 6, num_columns: int = 6) -> None:
+    if not isinstance(operation, Callable):
+        raise TypeError('Первым аргументом требуется передать функцию')
+
+    if not isinstance(num_rows, int) or not isinstance(num_columns, int):
+        num_rows = int(num_rows)
+        num_columns = int(num_columns)
+
     for i in range(1, num_rows + 1):
         print([operation(i, j) for j in range(1, num_columns + 1)])
 
