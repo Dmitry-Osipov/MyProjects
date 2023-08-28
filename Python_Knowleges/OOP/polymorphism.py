@@ -33,3 +33,4 @@ s2 = Square(20)
 #     # Ожидаемо получаем ошибку AttributeError: 'Square' object has no attribute 'get_rect_pr'
 
 # Но как можно решить нашу проблему? Можно решить в лоб:
+
