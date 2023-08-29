@@ -165,3 +165,52 @@ def heap_sort(array):
 array6 = [4, 2, 5, 8, 1, 9, 2, 3, 6, 8]
 heap_sort(array6)
 print(array6)
+
+# ----------------------------------------------------------------------------------------------------------------------
+
+# Напишите алгоритмы быстрой сортировки и бинарного поиска.
+
+
+def quick_sort(array, start_pos, end_pos):
+    left_pos = start_pos
+    right_pos = end_pos
+    pivot = array[(start_pos + end_pos) // 2]
+
+    while left_pos <= right_pos:
+        while array[left_pos] < pivot:
+            left_pos += 1
+        while array[right_pos] > pivot:
+            right_pos -= 1
+        if left_pos <= right_pos:
+            if left_pos < right_pos:
+                array[left_pos], array[right_pos] = array[right_pos], array[left_pos]
+            left_pos += 1
+            right_pos -= 1
+
+    if left_pos < end_pos:
+        quick_sort(array, left_pos, end_pos)
+    if start_pos < right_pos:
+        quick_sort(array, start_pos, right_pos)
+
+
+nums = [8, 2, 4, 6, 7, 1, 0, 5, 1, 2, 3, 4]
+quick_sort(nums, 0, len(nums) - 1)
+print(nums)
+
+
+def binary_search(numbers, value, minimum, maximum):
+    if maximum < minimum:
+        return -1
+
+    mid_pos = (maximum - minimum) // 2 + minimum
+
+    if numbers[mid_pos] < value:
+        return binary_search(numbers, value, mid_pos + 1, maximum)
+
+    if numbers[mid_pos] > value:
+        return binary_search(numbers, value, minimum, mid_pos - 1)
+
+    return mid_pos
+
+
+print(binary_search(nums, 7, 0, len(nums) - 1))
