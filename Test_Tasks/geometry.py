@@ -224,7 +224,7 @@ class Triangle(Figure):
         if self._is_square():
             hypotenuse = max(sides)
             sides.remove(hypotenuse)
-            return 0.5 * sides[0] * sides[1]
+            return (sides[0] * sides[1]) / 2
 
         semi_per = self.find_perimeter() / 2
         return sqrt(semi_per * (semi_per - sides[0]) * (semi_per - sides[1]) * (semi_per - sides[2]))
