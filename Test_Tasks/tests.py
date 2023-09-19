@@ -15,14 +15,19 @@ class TestFigures(unittest.TestCase):
 
     def test_invalid_circle(self):
         with self.assertRaises(ValueError):
-            circle1 = Circle(-5.3)
+            circle1 = Circle(-5.3)._check_figure()
+
+        with self.assertRaises(ValueError):
+            circle2 = Circle(5)
+            circle2.radius = [1, 2]
 
     def test_invalid_triangle(self):
         with self.assertRaises(ValueError):
-            triangle1 = Triangle(1, 20, 4)._check_triangle()
+            triangle1 = Triangle(1, 20, 4)._check_figure()
 
         with self.assertRaises(ValueError):
-            triangle2 = Triangle(1, 1, 10)._check_triangle()
+            triangle2 = Triangle(3, 4, 5)
+            triangle2.a = 250
 
 
 if __name__ == '__main__':
