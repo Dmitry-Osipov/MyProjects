@@ -102,7 +102,7 @@ class Triangle(Figure):
     c - третья сторона треугольника.
     """
 
-    def __init__(self, a, b, c):
+    def __init__(self, a: int | float, b: int | float, c: int | float):
         """
         Инициализатор треугольника с тремя сторонами.
 

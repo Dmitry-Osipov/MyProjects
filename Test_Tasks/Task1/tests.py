@@ -1,5 +1,5 @@
 import unittest
-from geometry import Circle, Triangle
+from Test_Tasks.Task1.geometry import Circle, Triangle
 
 
 class TestFigures(unittest.TestCase):
