@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Знакомство с JS</title>
+</head>
+<body>
+<p>Это обычный HTML документ</p>
+
+<script language="JavaScript">
+    <!-- Запрос у пользователя + сохранение переменной -->
+    let p = prompt("Введите имя: ");
+    
+    <!-- Подтверждение действия -->
+    alert ("Ваше имя: " + p);
+    
+    <!-- Операция с целыми числами. Изначально мы от пользователя получаем строку, так что её нужно преобразвать -->
+    let digit1 = parseInt(prompt("Введите первое число: "));
+    let digit2 = parseInt(prompt("Введите второе число: "));
+    
+    <!-- Работа с функциями -->
+    alert(sum(digit1, digit2));
+
+    function sum(a, b) {
+        return a + b;
+    }
+</script>
+
+<p>Выходим обратно в HTML</p>
+</body>
+</html>
