@@ -1,0 +1,38 @@
+body {
+    background-image: url(https://gozman.space/assets/img/blog/web/26/blueprint.jpg);
+}
+
+.main {
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    width: 600px;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(203, 233, 10);
+}
+
+h2 {
+    color: rgb(1, 150, 14)
+}
+
+button {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+.basket {
+    height: 1000px;
+}
+
+li {
+    display: inline;
+}
