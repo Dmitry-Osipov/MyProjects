@@ -1,0 +1,126 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap'); */
+
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('./font/font/Gilroy-Bold.woff2');
+}
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('./font/font/Gilroy-Bold.woff2');
+}
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('./font/font/Gilroy-Bold.woff2');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body {
+	scroll-behavior: smooth;
+	background: #020a18;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+h1,
+h2,
+p,
+a,
+button {
+	color: #fff;
+	/* font-family: 'Open Sans', sans-serif; */
+	font-family: 'Gilroy-Bold';
+	font-weight: 600;
+}
+
+.container {
+	max-width: 1146px;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 39px 0;
+	margin-bottom: 160px;
+}
+
+.navigation {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+}
+
+.navigation a {
+	font-size: 16px;
+}
+
+.main {
+	margin-bottom: 197px;
+}
+
+.mainContent {
+	display: flex;
+	justify-content: space-between;
+}
+
+.mainContent__leftSide {
+	max-width: 604px;
+}
+
+.mainContent__leftSide h2 {
+	color: #3a68b8;
+	font-size: 18px;
+	line-height: 160%;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.mainContent__leftSide h1 {
+	font-size: 55px;
+	font-weight: 800;
+	line-height: 130%;
+	margin-bottom: 40px;
+}
+
+.mainContent__leftSide p {
+	font-size: 18px;
+	line-height: 160%;
+	opacity: 0.7;
+	margin-bottom: 50px;
+	max-width: 558px;
+}
+
+.mainContent__leftSide-btnList button {
+	padding: 15px 30px;
+	border-radius: 5px;
+	background: #3a68b8;
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.mainContent__leftSide-btnList {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.btn_play {
+	display: flex;
+	gap: 10px;
+}
+
+.footer {
+	margin-bottom: 100px;
+}
+
+.logos {
+	display: flex;
+	justify-content: space-between;
+}
