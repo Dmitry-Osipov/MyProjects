@@ -1,0 +1,139 @@
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('./font/font/Gilroy-Bold.woff2');
+}
+
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('./font/font/Gilroy-Bold.woff2');
+}
+
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('./font/font/Gilroy-Bold.woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    background: #FFF;
+    flex-shrink: 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.header {
+    margin-bottom: 89px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.header img {
+    width: 137px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 51px;
+}
+
+.header nav {
+    margin-top: 51px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 250px;
+}
+
+.header nav a {
+    margin-left: 20px;
+}
+
+.header p {
+    margin: 0;
+    padding: 0;
+}
+
+.headerHomeLink {
+    color: #F25822;
+    font-size: 14px;
+}
+
+.navigationHeader {
+    color: #000000;
+    font-size: 14px;
+}
+
+.main {
+    margin-left: 20px;
+}
+
+.mainText {
+    font-size: 15px;
+    position: relative;
+    max-width: 900px;
+}
+
+.mainText h1 {
+    color: #000;
+    font-size: 60px;
+    margin-bottom: 17px;
+}
+
+.mainText p {
+    color: #888;
+    font-size: 20px;
+    margin-bottom: 52px;
+    display: inline;
+}
+
+.mainText img {
+    display: inline;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(50%);
+    margin-right: 10px;
+}
+
+.mainButton {
+    margin-bottom: 177px;
+}
+
+.mainButton a {
+    color: #AAA;
+}
+
+button {
+    color: #FFF;
+    border: none;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    min-height: 35px;
+    min-width: 100px;
+    margin-right: 50px;
+}
+
+.navigationFooter {
+    width: 160px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigationFooter img {
+    margin-left: 35px;
+}
