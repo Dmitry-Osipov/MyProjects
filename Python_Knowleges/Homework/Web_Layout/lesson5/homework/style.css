@@ -1,0 +1,171 @@
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('./font/font/Gilroy-Bold.woff2');
+}
+
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('./font/font/Gilroy-Bold.woff2');
+}
+
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('./font/font/Gilroy-Bold.woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    background: #FFF;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.up-menu {
+    font-family: Gilroy-Bold;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.up-image{
+    margin-top: 35px;
+    margin-bottom: 25px;
+    margin-left: 29px;
+}
+
+.up-menu h3 {
+    color: #000;
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 17px;
+    margin-left: 29px;
+}
+
+.up-menu p {
+    color: #666;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    margin-bottom: 25px;
+    margin-left: 29px;
+}
+
+.up-menu a {
+    color: #000;
+    font-size: 11px;
+    margin-left: 29px;
+}
+
+.business, .leads, .sales, .subLeads {
+    width: 381px;
+    height: 291px;
+    display: inline-block;
+}
+
+.subLeads {
+    width: 370px;
+    height: 291px;
+    background: #FFF;
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.subLeads h3 {
+    color: #000;
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 17px;
+    margin-left: 29px;
+}
+
+.subLeads p {
+    color: #666;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    margin-bottom: 25px;
+    margin-left: 29px;
+}
+
+.subLeads a {
+    color: #000;
+    font-size: 11px;
+    margin-left: 29px;
+}
+
+.main {
+    margin-top: 100px;
+    background: #FAFAFA;
+    color: #666;
+    text-align: center;
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.main h1 {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 45px;
+    line-height: normal;
+    margin-bottom: 19px;
+}
+
+.main p {
+    margin-bottom: 54px;
+}
+
+.down-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.down-menu h3 {
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    margin-top: 21px;
+    margin-bottom: 22px;
+}
+
+.down-menu p {
+    color: #AAA;
+    font-size: 15px;
+    margin-bottom: 39px;
+}
+
+.down-menu a {
+    color: #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 13px;
+}
+
+.research, .optimizadion, .marketing {
+    background: #FFF;
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.10);
+}
+
+.learn-more {
+    width: 150px;
+    height: 50px;
+    margin-bottom: 50px;
+    background-color: #F25822;
+    border: none;
+    border-radius: 50px;
+}
