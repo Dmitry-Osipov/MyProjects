@@ -10,4 +10,4 @@ temp/
 my_test.py
 .idea/
 main.py
-./My_Projects/secrets.py
+My_Projects/secrets.py
