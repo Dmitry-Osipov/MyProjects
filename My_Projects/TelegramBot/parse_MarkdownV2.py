@@ -2,7 +2,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.filters import CommandStart, Command
 from aiogram.types import Message
 
-from My_Projects.secrets import bot_token
+from secrets import bot_token
 
 API_TOKEN: str = bot_token
 bot: Bot = Bot(token=bot_token, parse_mode='MarkdownV2')

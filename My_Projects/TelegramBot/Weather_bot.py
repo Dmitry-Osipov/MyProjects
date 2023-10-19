@@ -1,7 +1,7 @@
 import datetime, requests, math, telebot
 from telebot import types
-from My_Projects.secrets import bot_token_weather
-from My_Projects.secrets import weather_api
+from secrets import bot_token_weather
+from secrets import weather_api
 
 
 bot = telebot.TeleBot(bot_token_weather)

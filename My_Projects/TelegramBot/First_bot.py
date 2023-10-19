@@ -1,6 +1,6 @@
 import random, telebot
 from telebot import types
-from My_Projects.secrets import bot_token
+from secrets import bot_token
 
 
 bot = telebot.TeleBot(bot_token)

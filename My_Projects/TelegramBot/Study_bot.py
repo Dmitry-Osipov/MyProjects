@@ -5,7 +5,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import default_state
 from aiogram.fsm.storage.redis import RedisStorage, Redis
 from aiogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton, Message, PhotoSize
-from My_Projects.secrets import bot_token
+from secrets import bot_token
 
 
 redis: Redis = Redis(host='localhost')
