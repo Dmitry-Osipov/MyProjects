@@ -11,3 +11,4 @@ my_test.py
 .idea/
 main.py
 secrets.py
+./venv/
