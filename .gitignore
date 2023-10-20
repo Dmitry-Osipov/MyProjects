@@ -12,3 +12,4 @@ my_test.py
 main.py
 secrets.py
 ./venv/
+/venv/
