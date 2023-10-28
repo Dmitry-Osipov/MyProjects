@@ -1,4 +1,6 @@
 import time
+import math
+from functools import wraps
 
 
 def func_decorator(func):
@@ -93,3 +95,99 @@ def get_fast_nod(a, b):
 
 print(get_nod(2, 10000000))
 print(get_fast_nod(2, 10000000))
+
+
+# Декораторы функций с параметрами:
+def func_decorator(func):
+    def wrapper(x, *args, **kwargs):
+        dx = 0.001
+        res = (func(x + dx, *args, **kwargs) - func(x, *args, **kwargs)) / dx
+        return res
+    return wrapper
+
+
+@func_decorator
+def sin_df(x):
+    return math.sin(x)
+
+
+df = sin_df(math.pi / 3)
+print(df)
+
+"""
+Результат получен, но мы хотим передавать dx в аргумент декоратора, чтобы dx можно было бы изменить. Для этого нам 
+требуется дополнительно описать ещё одну функцию, а оставшиеся вложить в неё:
+"""
+
+
+def df_decorator(dx=0.01):
+    def func_decorator(func):
+        def wrapper(x, *args, **kwargs):
+            res = (func(x + dx, *args, **kwargs) - func(x, *args, **kwargs)) / dx
+            return res
+
+        return wrapper
+    return func_decorator
+
+
+@df_decorator(dx=0.00001)
+def sin_df(x):
+    return math.sin(x)
+
+
+df = sin_df(math.pi / 3)
+print(df)  # Всё отработало, точность по итогу получили больше.
+
+
+"""
+Единственная проблема возникает при получении имени функции. Без декоратора имя функции sin_df (sin_df.__name__) таким и 
+останется, а вот с декоратором будет уже wrapper. Исправим описание и имя функции:
+"""
+
+
+def df_decorator(dx=0.01):
+    def func_decorator(func):
+        def wrapper(x, *args, **kwargs):
+            res = (func(x + dx, *args, **kwargs) - func(x, *args, **kwargs)) / dx
+            return res
+
+        wrapper.__name__ = func.__name__  # Теперь имя декорированной функции останется нетронутым.
+        wrapper.__doc__ = func.__doc__  # Теперь описание декорированной функции останется нетронутым.
+        return wrapper
+    return func_decorator
+
+
+@df_decorator(dx=0.00001)
+def sin_df(x):
+    """Функция для вычисления производной синуса"""
+    return math.sin(x)
+
+
+print(sin_df.__name__)
+print(sin_df.__doc__)
+
+
+"""
+Выше написанное является базовыми задачами. Соответственно, они уже вшиты в сам язык. Импортируем wraps и преобразуем код:
+"""
+
+
+def df_decorator(dx=0.01):
+    def func_decorator(func):
+        @wraps(func)  # В декоратор передали ссылку на функцию, соответственно, всё сохранилось.
+        def wrapper(x, *args, **kwargs):
+            res = (func(x + dx, *args, **kwargs) - func(x, *args, **kwargs)) / dx
+            return res
+
+        return wrapper
+    return func_decorator
+
+
+@df_decorator(dx=0.00001)
+def sin_df(x):
+    """Функция для вычисления производной синуса"""
+    return math.sin(x)
+
+
+print(sin_df.__name__)
+print(sin_df.__doc__)
