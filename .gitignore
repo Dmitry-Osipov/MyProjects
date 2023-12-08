@@ -9,7 +9,6 @@ test/
 temp/
 my_test.py
 .idea/
-main.py
 secrets.py
 ./venv/
 /venv/
